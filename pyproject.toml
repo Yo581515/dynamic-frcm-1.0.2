@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dynamic-frcm"
+version = "1.0.2"
+description = "DYNAMIC fire risk computational model"
+authors = [
+    "Lars Michael Kristensen",
+    "Ruben Dobler Strand"
+]
+
+license = "LGPL-3.0-only"
+readme = "README.md"
+packages = [{include = "frcm", from = "src"}]
+
+[project]
+name = "dynamic-frcm"
+version = "1.0.2"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+  "pydantic>=2.5.3,<3",
+  "python-dateutil>=2.8.2,<3",
+  "numpy>=2.0.0,<3",
+  "requests>=2.31.0,<3",
+  "python-decouple>=3.8,<4"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
